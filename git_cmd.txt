@@ -66,3 +66,10 @@ iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from gittt"
 
 iMac-de-iMac5K:CicinGit imac5k$ git remote add alias_name https://github.com/mohcicin/GITExample.git
 iMac-de-iMac5K:CicinGit imac5k$ git push alias_name master
+
+iMac-de-iMac5K:Movies imac5k$ git clone https://github.com/mohcicin/GITExemple2.git --->clone git repo from remote server to local machine
+Cloning into 'GITExemple2'...
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from gittt"
+
+iMac-de-iMac5K:GITExemple2 imac5k$ git push https://github.com/mohcicin/GITExemple2.git main
