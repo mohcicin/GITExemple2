@@ -73,3 +73,9 @@ iMac-de-iMac5K:CicinGit imac5k$ git add .
 iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from gittt"
 
 iMac-de-iMac5K:GITExemple2 imac5k$ git push https://github.com/mohcicin/GITExemple2.git main
+
+iMac-de-iMac5K:GITExemple2 imac5k$ git pull origin main
+
+iMac-de-iMac5K:GITExemple2 imac5k$ git checkout -b cicin
+iMac-de-iMac5K:GITExemple2 imac5k$ git add .
+iMac-de-iMac5K:GITExemple2 imac5k$ git commit -m "pull cmd"
