@@ -1,0 +1,68 @@
+iMac-de-iMac5K:CicinGit imac5k$ git config --global user.name cicin 
+iMac-de-iMac5K:CicinGit imac5k$ git config --global user.email cicin09061991@gmail.com 
+iMac-de-iMac5K:CicinGit imac5k$ git config user.name
+cicin
+iMac-de-iMac5K:CicinGit imac5k$ git init 
+iMac-de-iMac5K:CicinGit imac5k$ git status 
+iMac-de-iMac5K:CicinGit imac5k$ git add index.php  
+iMac-de-iMac5K:CicinGit imac5k$ git rm --cached index.php  
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "First commit" 
+iMac-de-iMac5K:CicinGit imac5k$ git log 
+iMac-de-iMac5K:CicinGit imac5k$ git log --oneline
+a918b68 (HEAD -> master) First commit 3
+d910a1f First commit 2
+0519014 First commit 
+iMac-de-iMac5K:CicinGit imac5k$ git checkout master 
+iMac-de-iMac5K:CicinGit imac5k$ git revert d910a1f ---> remove added commit 
+iMac-de-iMac5K:CicinGit imac5k$ git reset d910a1f ---> Go back to specific commit 
+iMac-de-iMac5K:CicinGit imac5k$ git branch newcicin ---> create new branch
+iMac-de-iMac5K:CicinGit imac5k$ git branch -a ---> list all brunch
+* master
+  newcicin
+iMac-de-iMac5K:CicinGit imac5k$ git checkout newcicin ---> use for working as default 
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git status 
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "added newcicin" 
+iMac-de-iMac5K:CicinGit imac5k$ git checkout master ---> switch to master branch 
+iMac-de-iMac5K:CicinGit imac5k$ git branch -D newcicin ---> merge branch newcicin in master 
+
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from master"
+
+iMac-de-iMac5K:CicinGit imac5k$ git checkout newcicin2
+Switched to branch 'newcicin2'
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from cicin2"
+
+
+iMac-de-iMac5K:CicinGit imac5k$ git checkout master
+Switched to branch 'master'
+iMac-de-iMac5K:CicinGit imac5k$ git merge newcicin2 
+Auto-merging index.php
+CONFLICT (content): Merge conflict in index.php
+Automatic merge failed; fix conflicts and then commit the result.
+
+---> in this case go to specific file and merge file manually by removing comment
+
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit
+[master 0acf0e6] Merge branch 'newcicin2'
+
+iMac-de-iMac5K:CicinGit imac5k$ git log --oneline
+0acf0e6 (HEAD -> master) Merge branch 'newcicin2'
+0db41e2 (newcicin2) from cicin2
+ebe715f from master
+d75398c newcicin2
+28f830e (newcicin) new cicin
+e42b6fa commit new
+d910a1f First commit 2
+0519014 First commit
+iMac-de-iMac5K:CicinGit imac5k$ 
+
+iMac-de-iMac5K:CicinGit imac5k$ git push https://github.com/mohcicin/GITExample.git master ---->push to git repository
+iMac-de-iMac5K:CicinGit imac5k$ git add .
+iMac-de-iMac5K:CicinGit imac5k$ git commit -m "from gittt"
+
+iMac-de-iMac5K:CicinGit imac5k$ git remote add alias_name https://github.com/mohcicin/GITExample.git
+iMac-de-iMac5K:CicinGit imac5k$ git push alias_name master
